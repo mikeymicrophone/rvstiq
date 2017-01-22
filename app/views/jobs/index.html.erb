@@ -1,0 +1,6 @@
+<% @jobs.each do |job| %>
+  <%= job.name %><br>
+  <% job.photos.each do |photo| %>
+    <%= image_tag photo.image_url %>
+  <% end %>
+<% end %>
