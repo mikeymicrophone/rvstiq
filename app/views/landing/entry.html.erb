@@ -5,6 +5,13 @@
 </div>
 
 <div id="construction_images">
+  <% @jobs.each do |job| %>
+    <% job.photos.each do |photo| %>
+      <div>
+        <%= image_tag photo.image %>
+      </div>
+    <% end %>
+  <% end %>
   <%= image_tag 'bookshelf_under_bed.png' %>
 </div>
 
